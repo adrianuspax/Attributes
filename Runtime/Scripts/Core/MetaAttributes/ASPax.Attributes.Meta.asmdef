@@ -1,0 +1,16 @@
+{
+    "name": "ASPax.Attributes.Meta",
+    "rootNamespace": "ASPax.Attributes.Meta",
+    "references": [
+        "GUID:f41b18d51617ea8429d62d6655b5dc30"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

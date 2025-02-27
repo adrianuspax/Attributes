@@ -1,0 +1,20 @@
+{
+    "name": "ASPax.Test",
+    "rootNamespace": "ASPax.Test",
+    "references": [
+        "ASPax.Attributes.Drawer",
+        "ASPax.Attributes.Drawer.SpecialCases",
+        "ASPax.Attributes.Validator",
+        "ASPax.Attributes.Utility",
+        "ASPax.Attributes.Meta"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

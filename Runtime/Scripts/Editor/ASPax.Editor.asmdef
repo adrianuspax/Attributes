@@ -1,0 +1,22 @@
+{
+    "name": "ASPax.Editor",
+    "rootNamespace": "ASPax.Editor",
+    "references": [
+        "ASPax.Attributes.Drawer",
+        "ASPax.Attributes.Utility",
+        "ASPax.Attributes.Validator",
+        "ASPax.Attributes.Drawer.SpecialCases",
+        "ASPax.Attributes.Meta"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
