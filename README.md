@@ -75,7 +75,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/AnimatorParam_Inspector.png)
+![inspector](Runtime/Documentation~/AnimatorParam_Inspector.png)
 
 ### Button
 Um método pode ser marcado como um botão. Um botão aparece no inspetor e executa o método se clicado.
@@ -92,7 +92,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Button_Inspector.png)
+![inspector](Runtime//Documentation~/Button_Inspector.png)
 
 ### CurveRange
 Defina limites e modifique a cor da curva para AnimationCurves
@@ -111,7 +111,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/CurveRange_Inspector.png)
+![inspector](Runtime/Documentation~/CurveRange_Inspector.png)
 
 ### Dropdown
 Fornece uma interface para seleção de valores suspensos.
@@ -147,7 +147,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Dropdown_Inspector.gif)
+![inspector](Runtime/Documentation~/Dropdown_Inspector.gif)
 
 ### EnumFlags
 Fornece interface suspensa para definir sinalizadores de enumeração.
@@ -169,7 +169,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/EnumFlags_Inspector.png)
+![inspector](Runtime/Documentation~/EnumFlags_Inspector.png)
 
 ### Expandable
 Torne objetos programáveis ​​expansíveis.
@@ -182,7 +182,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Expandable_Inspector.png)
+![inspector](Runtime/Documentation~/Expandable_Inspector.png)
 
 ### HorizontalLine
 Linhas horizontais para inspector.
@@ -201,7 +201,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/HorizontalLine_Inspector.png)
+![inspector](Runtime/Documentation~/HorizontalLine_Inspector.png)
 
 ### InfoBox
 Usado para fornecer informações adicionais.
@@ -220,7 +220,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/InfoBox_Inspector.png)
+![inspector](Runtime/Documentation~/InfoBox_Inspector.png)
 
 ### InputAxis
 Selecione um eixo de entrada por meio da interface suspensa.
@@ -233,7 +233,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/InputAxis_Inspector.png)
+![inspector](Runtime/Documentation~/InputAxis_Inspector.png)
 
 ### Layer
 Selecione uma camada na interface suspensa.
@@ -249,7 +249,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Layer_Inspector.png)
+![inspector](Runtime/Documentation~/Layer_Inspector.png)
 
 ### MinMaxSlider
 Um controle deslizante duplo. O **valor min** é salvo na propriedade **X**, e o **valor max** é salvo na propriedade **Y** de um campo **Vector2**.
@@ -262,7 +262,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/MinMaxSlider_Inspector.png)
+![inspector](Runtime/Documentation~/MinMaxSlider_Inspector.png)
 
 ### ProgressBar
 Barra de progresso.
@@ -280,7 +280,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ProgressBar_Inspector.png)
+![inspector](Runtime/Documentation~/ProgressBar_Inspector.png)
 
 ### ReorderableList
 Fornece campos do tipo matriz com uma interface para fácil reordenação de elementos.
@@ -296,7 +296,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ReorderableList_Inspector.gif)
+![inspector](Runtime/Documentation~/ReorderableList_Inspector.gif)
 
 ### ResizableTextArea
 Uma área de texto redimensionável onde você pode ver o texto inteiro.
@@ -310,7 +310,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ResizableTextArea_Inspector.gif)
+![inspector](Runtime/Documentation~/ResizableTextArea_Inspector.gif)
 
 ### Scene
 Selecione uma cena nas configurações de construção por meio da interface suspensa.
@@ -326,7 +326,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Scene_Inspector.png)
+![inspector](Runtime/Documentation~/Scene_Inspector.png)
 
 ### ShowAssetPreview
 Mostra a pré-visualização da textura de um determinado ativo (Sprite, Prefab...).
@@ -342,7 +342,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ShowAssetPreview_Inspector.png)
+![inspector](Runtime/Documentation~/ShowAssetPreview_Inspector.png)
 
 ### ShowNativeProperty
 Mostra propriedades nativas do C# no inspetor.
@@ -359,7 +359,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ShowNativeProperty_Inspector.png)
+![inspector](Runtime/Documentation~/ShowNativeProperty_Inspector.png)
 
 ### ShowNonSerializedField
 Mostra campos não serializados no inspector.
@@ -382,7 +382,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ShowNonSerializedField_Inspector.png)
+![inspector](Runtime/Documentation~/ShowNonSerializedField_Inspector.png)
 
 ### SortingLayer
 Selecione uma Sorting Layer por meio da interface suspensa.
@@ -398,7 +398,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/SortingLayer_Inspector.png)
+![inspector](Runtime/Documentation~/SortingLayer_Inspector.png)
 
 ### Tag
 Selecione uma tag na interface suspensa.
@@ -411,7 +411,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Tag_Inspector.png)
+![inspector](Runtime/Documentation~/Tag_Inspector.png)
 
 ## Meta Attributes
 Dê metadados aos campos. Um campo pode ter mais de um atributo meta.
@@ -434,7 +434,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/BoxGroup_Inspector.png)
+![inspector](Runtime/Documentation~/BoxGroup_Inspector.png)
 
 ### Foldout
 Cria um grupo Fold.
@@ -449,7 +449,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Foldout_Inspector.gif)
+![inspector](Runtime/Documentation~/Foldout_Inspector.gif)
 
 ### EnableIf / DisableIf
 Habilita/Desabilita condicionalmente.
@@ -474,7 +474,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/EnableIf_Inspector.gif)
+![inspector](Runtime/Documentation~/EnableIf_Inspector.gif)
 
 Você pode ter mais de uma condição.
 
@@ -515,7 +515,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ShowIf_Inspector.gif)
+![inspector](Runtime/Documentation~/ShowIf_Inspector.gif)
 
 Você pode ter mais de uma condição.
 
@@ -547,7 +547,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Label_Inspector.png)
+![inspector](Runtime/Documentation~/Label_Inspector.png)
 
 ### OnValueChanged
 Detecta uma mudança de valor e executa um retorno de chamada.
@@ -578,7 +578,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ReadOnly_Inspector.png)
+![inspector](Runtime/Documentation~/ReadOnly_Inspector.png)
 
 ## Validator Attributes
 Usado para validar os campos. Um campo pode ter um número infinito de atributos validadores.
@@ -597,7 +597,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/MinValueMaxValue_Inspector.gif)
+![inspector](Runtime/Documentation~/MinValueMaxValue_Inspector.gif)
 
 ### Required
 Usado para lembrar o desenvolvedor de que um determinado campo de tipo de referência é obrigatório.
@@ -613,7 +613,7 @@ public class NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/Required_Inspector.png)
+![inspector](Runtime/Documentation~/Required_Inspector.png)
 
 ### ValidateInput
 O ValidatorAttribute mais poderoso.
@@ -639,4 +639,4 @@ public class _NaughtyComponent : MonoBehaviour
 }
 ```
 
-![inspector](https://github.com/dbrizov/NaughtyAttributes/blob/master/Assets/NaughtyAttributes/Documentation~/ValidateInput_Inspector.png)
+![inspector](Runtime/Documentation~/ValidateInput_Inspector.png)
