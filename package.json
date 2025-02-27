@@ -1,21 +1,27 @@
 {
-  "name": "com.dbrizov.naughtyattributes",
-  "displayName": "NaughtyAttributes",
-  "version": "2.1.4",
+  "name": "com.adrianuspax.attributes",
+  "displayName": "ASPax Attributes",
+  "version": "0.0.1",
   "unity": "2018.4",
-  "description": "NaughtyAttributes is an extension for the Unity Inspector.",
-  "keywords": [ "attribute", "inspector", "editor" ],
+  "licence": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/adrianuspax/Attributes.git"
+    },
+    "author": {
+    "name": "Adriano Paz",
+    "email": "contato@adrianopaz.com",
+    "url": "https://github.com/adrianuspax"
+  },
+  "description": "Attributes for Unity Inspector",
   "category": "editor extensions",
   "dependencies": {},
   "samples": [
     {
       "displayName": "Demo Scene",
       "description": "Demo Scene",
-      "path": "Samples/DemoScene"
+      "path": "Samples/DemoScene~"
     }
   ],
-  "author": {
-    "name": "Denis Rizov",
-    "url": "https://github.com/dbrizov"
-  }
+  "keywords": [ "attribute", "inspector", "editor", "unity" ]
 }
