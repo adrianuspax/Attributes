@@ -67,7 +67,7 @@ namespace ASPax.Editor
 
         public void DrawDefaultPropertyAndHelpBox(Rect rect, SerializedProperty property, string message, MessageType messageType)
         {
-            var indentLength = NaughtyEditorGUI.GetIndentLength(rect);
+            var indentLength = XGUI.GetIndentLength(rect);
             var helpBoxRect = new Rect()
             {
                 x = rect.x + indentLength,
@@ -76,7 +76,7 @@ namespace ASPax.Editor
                 height = GetHelpBoxHeight()
             };
 
-            NaughtyEditorGUI.HelpBox(helpBoxRect, message, MessageType.Warning, context: property.serializedObject.targetObject);
+            XGUI.HelpBox(helpBoxRect, message, MessageType.Warning, context: property.serializedObject.targetObject);
 
             var propertyRect = new Rect()
             {

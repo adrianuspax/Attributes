@@ -47,7 +47,7 @@ namespace ASPax.Editor
                 {
                     var previewRect = new Rect()
                     {
-                        x = rect.x + NaughtyEditorGUI.GetIndentLength(rect),
+                        x = rect.x + XGUI.GetIndentLength(rect),
                         y = rect.y + EditorGUIUtility.singleLineHeight,
                         width = rect.width,
                         height = GetAssetPreviewSize(property).y

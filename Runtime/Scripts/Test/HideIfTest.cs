@@ -15,11 +15,11 @@ namespace ASPax.Test
         public HideIfEnum enum1;
         [EnumFlags] public HideIfEnumFlag enum2;
 
-        [HideIf(UConditionOperator.And, "hide1", "hide2")]
+        [HideIf(XConditionOperator.And, "hide1", "hide2")]
         [ReorderableList]
         public int[] hideIfAll;
 
-        [HideIf(UConditionOperator.Or, "hide1", "hide2")]
+        [HideIf(XConditionOperator.Or, "hide1", "hide2")]
         [ReorderableList]
         public int[] hideIfAny;
 
@@ -50,11 +50,11 @@ namespace ASPax.Test
         public HideIfEnum Enum1 { get { return enum1; } }
         public HideIfEnumFlag Enum2 { get { return enum2; } }
 
-        [HideIf(UConditionOperator.And, "Hide1", "Hide2")]
+        [HideIf(XConditionOperator.And, "Hide1", "Hide2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int hideIfAll;
 
-        [HideIf(UConditionOperator.Or, "Hide1", "Hide2")]
+        [HideIf(XConditionOperator.Or, "Hide1", "Hide2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int hideIfAny;
 
@@ -85,11 +85,11 @@ namespace ASPax.Test
         public HideIfEnum GetEnum1() { return enum1; }
         public HideIfEnumFlag GetEnum2() { return enum2; }
 
-        [HideIf(UConditionOperator.And, "GetHide1", "GetHide2")]
+        [HideIf(XConditionOperator.And, "GetHide1", "GetHide2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 hideIfAll = new Vector2(0.25f, 0.75f);
 
-        [HideIf(UConditionOperator.Or, "GetHide1", "GetHide2")]
+        [HideIf(XConditionOperator.Or, "GetHide1", "GetHide2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 hideIfAny = new Vector2(0.25f, 0.75f);
 

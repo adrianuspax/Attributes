@@ -196,11 +196,11 @@ namespace ASPax.Editor
             return conditionValues;
         }
 
-        internal static bool GetConditionsFlag(List<bool> conditionValues, UConditionOperator conditionOperator, bool invert)
+        internal static bool GetConditionsFlag(List<bool> conditionValues, XConditionOperator conditionOperator, bool invert)
         {
             bool flag;
 
-            if (conditionOperator == UConditionOperator.And)
+            if (conditionOperator == XConditionOperator.And)
             {
                 flag = true;
 

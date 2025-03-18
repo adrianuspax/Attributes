@@ -10,21 +10,21 @@ namespace ASPax.Attributes.Drawer
     {
         private Vector2 _min;
         private Vector2 _max;
-        private readonly UColor _color;
+        private readonly XColor _color;
 
-        public CurveRangeAttribute(Vector2 min, Vector2 max, UColor color = UColor.Clear)
+        public CurveRangeAttribute(Vector2 min, Vector2 max, XColor color = XColor.Clear)
         {
             _min = min;
             _max = max;
             _color = color;
         }
 
-        public CurveRangeAttribute(UColor color) : this(Vector2.zero, Vector2.one, color) { }
+        public CurveRangeAttribute(XColor color) : this(Vector2.zero, Vector2.one, color) { }
 
-        public CurveRangeAttribute(float minX, float minY, float maxX, float maxY, UColor color = UColor.Clear) : this(new Vector2(minX, minY), new Vector2(maxX, maxY), color) { }
+        public CurveRangeAttribute(float minX, float minY, float maxX, float maxY, XColor color = XColor.Clear) : this(new Vector2(minX, minY), new Vector2(maxX, maxY), color) { }
 
         public Vector2 Min => _min;
         public Vector2 Max => _max;
-        public UColor Color => _color;
+        public XColor Color => _color;
     }
 }

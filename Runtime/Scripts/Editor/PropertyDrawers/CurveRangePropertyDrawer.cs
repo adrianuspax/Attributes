@@ -35,7 +35,7 @@ namespace ASPax.Editor
                 height = curveRangeAttribute.Max.y - curveRangeAttribute.Min.y
             };
 
-            EditorGUI.CurveField(rect, property, curveRangeAttribute.Color == UColor.Clear ? Color.green : curveRangeAttribute.Color.GetColor(), curveRanges, label);
+            EditorGUI.CurveField(rect, property, curveRangeAttribute.Color == XColor.Clear ? Color.green : curveRangeAttribute.Color.GetColor(), curveRanges, label);
             EditorGUI.EndProperty();
         }
     }

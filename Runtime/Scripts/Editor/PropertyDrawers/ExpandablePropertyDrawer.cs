@@ -170,7 +170,7 @@ namespace ASPax.Editor
                                 height = childHeight
                             };
 
-                            NaughtyEditorGUI.PropertyField(childRect, childProperty, true);
+                            XGUI.PropertyField(childRect, childProperty, true);
 
                             yOffset += childHeight;
                         }

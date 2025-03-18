@@ -23,8 +23,8 @@ namespace ASPax.Editor
             {
                 EditorGUI.BeginProperty(rect, label, property);
 
-                var indentLength = NaughtyEditorGUI.GetIndentLength(rect);
-                var labelWidth = EditorGUIUtility.labelWidth + NaughtyEditorGUI.HorizontalSpacing;
+                var indentLength = XGUI.GetIndentLength(rect);
+                var labelWidth = EditorGUIUtility.labelWidth + XGUI.HorizontalSpacing;
                 var floatFieldWidth = EditorGUIUtility.fieldWidth;
                 var sliderWidth = rect.width - labelWidth - 2.0f * floatFieldWidth;
                 var sliderPadding = 5.0f;

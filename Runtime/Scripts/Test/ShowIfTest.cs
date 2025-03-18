@@ -15,11 +15,11 @@ namespace ASPax.Test
         public ShowIfEnum enum1;
         [EnumFlags] public ShowIfEnumFlag enum2;
 
-        [ShowIf(UConditionOperator.And, "show1", "show2")]
+        [ShowIf(XConditionOperator.And, "show1", "show2")]
         [ReorderableList]
         public int[] showIfAll;
 
-        [ShowIf(UConditionOperator.Or, "show1", "show2")]
+        [ShowIf(XConditionOperator.Or, "show1", "show2")]
         [ReorderableList]
         public int[] showIfAny;
 
@@ -50,11 +50,11 @@ namespace ASPax.Test
         public ShowIfEnum Enum1 { get { return enum1; } }
         public ShowIfEnumFlag Enum2 { get { return enum2; } }
 
-        [ShowIf(UConditionOperator.And, "Show1", "Show2")]
+        [ShowIf(XConditionOperator.And, "Show1", "Show2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int showIfAll;
 
-        [ShowIf(UConditionOperator.Or, "Show1", "Show2")]
+        [ShowIf(XConditionOperator.Or, "Show1", "Show2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int showIfAny;
 
@@ -85,11 +85,11 @@ namespace ASPax.Test
         public ShowIfEnum GetEnum1() { return enum1; }
         public ShowIfEnumFlag GetEnum2() { return enum2; }
 
-        [ShowIf(UConditionOperator.And, "GetShow1", "GetShow2")]
+        [ShowIf(XConditionOperator.And, "GetShow1", "GetShow2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 showIfAll = new Vector2(0.25f, 0.75f);
 
-        [ShowIf(UConditionOperator.Or, "GetShow1", "GetShow2")]
+        [ShowIf(XConditionOperator.Or, "GetShow1", "GetShow2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 showIfAny = new Vector2(0.25f, 0.75f);
 

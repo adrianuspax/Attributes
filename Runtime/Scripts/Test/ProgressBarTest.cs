@@ -8,14 +8,14 @@ namespace ASPax.Test
     public class ProgressBarTest : MonoBehaviour
     {
         [Header("Constant ProgressBar")]
-        [ProgressBar("Health", 100, UColor.Red)]
+        [ProgressBar("Health", 100, XColor.Red)]
         public float health = 50.0f;
 
         [Header("Nested ProgressBar")]
         public ProgressBarNest1 nest1;
 
         [Header("Dynamic ProgressBar")]
-        [ProgressBar("Elixir", "maxElixir", color: UColor.Violet)]
+        [ProgressBar("Elixir", "maxElixir", color: XColor.Violet)]
         public int elixir = 50;
         public int maxElixir = 100;
     }
@@ -23,7 +23,7 @@ namespace ASPax.Test
     [System.Serializable]
     public class ProgressBarNest1
     {
-        [ProgressBar("Mana", 100, UColor.Blue)]
+        [ProgressBar("Mana", 100, XColor.Blue)]
         public float mana = 25.0f;
 
         public ProgressBarNest2 nest2;
@@ -32,7 +32,7 @@ namespace ASPax.Test
     [System.Serializable]
     public class ProgressBarNest2
     {
-        [ProgressBar("Stamina", 100, UColor.Green)]
+        [ProgressBar("Stamina", 100, XColor.Green)]
         public float stamina = 75.0f;
     }
 }

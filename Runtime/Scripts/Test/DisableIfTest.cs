@@ -15,11 +15,11 @@ namespace ASPax.Test
         public DisableIfEnum enum1;
         [EnumFlags] public DisableIfEnumFlag enum2;
 
-        [DisableIf(UConditionOperator.And, "disable1", "disable2")]
+        [DisableIf(XConditionOperator.And, "disable1", "disable2")]
         [ReorderableList]
         public int[] disableIfAll;
 
-        [DisableIf(UConditionOperator.Or, "disable1", "disable2")]
+        [DisableIf(XConditionOperator.Or, "disable1", "disable2")]
         [ReorderableList]
         public int[] disableIfAny;
 
@@ -50,11 +50,11 @@ namespace ASPax.Test
         public DisableIfEnum Enum1 { get { return enum1; } }
         public DisableIfEnumFlag Enum2 { get { return enum2; } }
 
-        [DisableIf(UConditionOperator.And, "Disable1", "Disable2")]
+        [DisableIf(XConditionOperator.And, "Disable1", "Disable2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int disableIfAll = 1;
 
-        [DisableIf(UConditionOperator.Or, "Disable1", "Disable2")]
+        [DisableIf(XConditionOperator.Or, "Disable1", "Disable2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int disableIfAny = 2;
 
@@ -85,11 +85,11 @@ namespace ASPax.Test
         public DisableIfEnum GetEnum1() { return enum1; }
         public DisableIfEnumFlag GetEnum2() { return enum2; }
 
-        [DisableIf(UConditionOperator.And, "GetDisable1", "GetDisable2")]
+        [DisableIf(XConditionOperator.And, "GetDisable1", "GetDisable2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 enableIfAll = new Vector2(0.25f, 0.75f);
 
-        [DisableIf(UConditionOperator.Or, "GetDisable1", "GetDisable2")]
+        [DisableIf(XConditionOperator.Or, "GetDisable1", "GetDisable2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 enableIfAny = new Vector2(0.25f, 0.75f);
 

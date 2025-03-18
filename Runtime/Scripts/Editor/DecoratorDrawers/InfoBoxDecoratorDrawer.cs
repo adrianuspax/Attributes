@@ -16,7 +16,7 @@ namespace ASPax.Editor
         public override void OnGUI(Rect rect)
         {
             var infoBoxAttribute = (InfoBoxAttribute)attribute;
-            var indentLength = NaughtyEditorGUI.GetIndentLength(rect);
+            var indentLength = XGUI.GetIndentLength(rect);
             var infoBoxRect = new Rect()
             {
                 x = rect.x + indentLength,
@@ -57,7 +57,7 @@ namespace ASPax.Editor
                     break;
             }
 
-            NaughtyEditorGUI.HelpBox(rect, infoText, messageType);
+            XGUI.HelpBox(rect, infoText, messageType);
         }
     }
 }

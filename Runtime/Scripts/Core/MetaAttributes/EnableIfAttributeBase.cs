@@ -7,17 +7,17 @@ namespace ASPax.Attributes.Meta
     public abstract class EnableIfAttributeBase : MetaAttribute
     {
         private readonly string[] _conditions;
-        private readonly UConditionOperator _conditionOperator;
+        private readonly XConditionOperator _conditionOperator;
         protected bool isInverted;
         public Enum _enumValue;
 
         public EnableIfAttributeBase(string condition)
         {
-            _conditionOperator = UConditionOperator.And;
+            _conditionOperator = XConditionOperator.And;
             _conditions = new string[1] { condition };
         }
 
-        public EnableIfAttributeBase(UConditionOperator conditionOperator, params string[] conditions)
+        public EnableIfAttributeBase(XConditionOperator conditionOperator, params string[] conditions)
         {
             _conditionOperator = conditionOperator;
             _conditions = conditions;
@@ -32,7 +32,7 @@ namespace ASPax.Attributes.Meta
         /// </summary>
         public Enum EnumValue => _enumValue;
         public string[] Conditions => _conditions;
-        public UConditionOperator ConditionOperator => _conditionOperator;
+        public XConditionOperator ConditionOperator => _conditionOperator;
         public bool IsInverted => isInverted;
     }
 }

@@ -3,5 +3,5 @@
 namespace ASPax.Attributes.Validator
 {
     using Utility;
-    public class ValidatorAttribute : Attribute, IASPaxAttribute { }
+    public class ValidatorAttribute : Attribute, IAtribute { }
 }

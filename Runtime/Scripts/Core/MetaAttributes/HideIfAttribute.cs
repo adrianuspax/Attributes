@@ -12,7 +12,7 @@ namespace ASPax.Attributes.Meta
             isInverted = true;
         }
 
-        public HideIfAttribute(UConditionOperator conditionOperator, params string[] conditions) : base(conditionOperator, conditions)
+        public HideIfAttribute(XConditionOperator conditionOperator, params string[] conditions) : base(conditionOperator, conditions)
         {
             isInverted = true;
         }

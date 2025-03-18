@@ -16,11 +16,11 @@ namespace ASPax.Test
         public EnableIfEnum enum1;
         [EnumFlags] public EnableIfEnumFlag enum2;
 
-        [EnableIf(UConditionOperator.And, "enable1", "enable2")]
+        [EnableIf(XConditionOperator.And, "enable1", "enable2")]
         [ReorderableList]
         public int[] enableIfAll;
 
-        [EnableIf(UConditionOperator.Or, "enable1", "enable2")]
+        [EnableIf(XConditionOperator.Or, "enable1", "enable2")]
         [ReorderableList]
         public int[] enableIfAny;
 
@@ -51,11 +51,11 @@ namespace ASPax.Test
         public EnableIfEnum Enum1 { get { return enum1; } }
         public EnableIfEnumFlag Enum2 { get { return enum2; } }
 
-        [EnableIf(UConditionOperator.And, "Enable1", "Enable2")]
+        [EnableIf(XConditionOperator.And, "Enable1", "Enable2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int enableIfAll;
 
-        [EnableIf(UConditionOperator.Or, "Enable1", "Enable2")]
+        [EnableIf(XConditionOperator.Or, "Enable1", "Enable2")]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int enableIfAny;
 
@@ -86,11 +86,11 @@ namespace ASPax.Test
         public EnableIfEnum GetEnum1() { return enum1; }
         public EnableIfEnumFlag GetEnum2() { return enum2; }
 
-        [EnableIf(UConditionOperator.And, "GetEnable1", "GetEnable2")]
+        [EnableIf(XConditionOperator.And, "GetEnable1", "GetEnable2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 enableIfAll = new Vector2(0.25f, 0.75f);
 
-        [EnableIf(UConditionOperator.Or, "GetEnable1", "GetEnable2")]
+        [EnableIf(XConditionOperator.Or, "GetEnable1", "GetEnable2")]
         [MinMaxSlider(0.0f, 1.0f)] // AllowNesting attribute is not needed, because the field is already marked with a custom naughty property drawer
         public Vector2 enableIfAny = new Vector2(0.25f, 0.75f);
 

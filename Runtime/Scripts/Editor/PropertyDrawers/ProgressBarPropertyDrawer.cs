@@ -40,7 +40,7 @@ namespace ASPax.Editor
                 var barColor = progressBarAttribute.Color.GetColor();
                 var labelColor = Color.white;
 
-                var indentLength = NaughtyEditorGUI.GetIndentLength(rect);
+                var indentLength = XGUI.GetIndentLength(rect);
                 var barRect = new Rect()
                 {
                     x = rect.x + indentLength,

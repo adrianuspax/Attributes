@@ -52,7 +52,7 @@ namespace ASPax.Editor
                     if (selectedValueIndex < 0)
                         selectedValueIndex = 0;
 
-                    NaughtyEditorGUI.Dropdown(rect, property.serializedObject, target, dropdownField, label.text, selectedValueIndex, values, displayOptions);
+                    XGUI.Dropdown(rect, property.serializedObject, target, dropdownField, label.text, selectedValueIndex, values, displayOptions);
                 }
                 else if (valuesObject is IDropdownList list1)
                 {
@@ -87,7 +87,7 @@ namespace ASPax.Editor
                     if (selectedValueIndex < 0)
                         selectedValueIndex = 0;
 
-                    NaughtyEditorGUI.Dropdown(rect, property.serializedObject, target, dropdownField, label.text, selectedValueIndex, values.ToArray(), displayOptions.ToArray());
+                    XGUI.Dropdown(rect, property.serializedObject, target, dropdownField, label.text, selectedValueIndex, values.ToArray(), displayOptions.ToArray());
                 }
             }
             else

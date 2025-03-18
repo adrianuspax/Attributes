@@ -20,7 +20,7 @@ namespace ASPax.Editor
             var rect = EditorGUI.IndentedRect(position);
             rect.y += EditorGUIUtility.singleLineHeight / 3.0f;
             var lineAttr = (HorizontalLineAttribute)attribute;
-            NaughtyEditorGUI.HorizontalLine(rect, lineAttr.Height, lineAttr.Color.GetColor());
+            XGUI.HorizontalLine(rect, lineAttr.Height, lineAttr.Color.GetColor());
         }
     }
 }

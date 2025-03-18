@@ -8,18 +8,18 @@ namespace ASPax.Attributes.Drawer
     public class HorizontalLineAttribute : DrawerAttribute
     {
         public const float HEIGHT = 2.0f;
-        public const UColor COLOR = UColor.Gray;
+        public const XColor COLOR = XColor.Gray;
 
         private readonly float _height;
-        private readonly UColor _color;
+        private readonly XColor _color;
 
-        public HorizontalLineAttribute(float height = HEIGHT, UColor color = COLOR)
+        public HorizontalLineAttribute(float height = HEIGHT, XColor color = COLOR)
         {
             _height = height;
             _color = color;
         }
 
         public float Height => _height;
-        public UColor Color => _color;
+        public XColor Color => _color;
     }
 }

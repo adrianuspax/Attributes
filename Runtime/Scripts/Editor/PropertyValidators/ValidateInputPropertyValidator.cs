@@ -21,9 +21,9 @@ namespace ASPax.Editor
                     if (!(bool)validationCallback.Invoke(target, null))
                     {
                         if (string.IsNullOrEmpty(validateInputAttribute.Message))
-                            NaughtyEditorGUI.HelpBox_Layout(property.name + " is not valid", MessageType.Error, context: property.serializedObject.targetObject);
+                            XGUI.HelpBox_Layout(property.name + " is not valid", MessageType.Error, context: property.serializedObject.targetObject);
                         else
-                            NaughtyEditorGUI.HelpBox_Layout(validateInputAttribute.Message, MessageType.Error, context: property.serializedObject.targetObject);
+                            XGUI.HelpBox_Layout(validateInputAttribute.Message, MessageType.Error, context: property.serializedObject.targetObject);
                     }
                 }
                 else if (callbackParameters.Length == 1)
@@ -37,21 +37,21 @@ namespace ASPax.Editor
                         if (!(bool)validationCallback.Invoke(target, new object[] { fieldInfo.GetValue(target) }))
                         {
                             if (string.IsNullOrEmpty(validateInputAttribute.Message))
-                                NaughtyEditorGUI.HelpBox_Layout(property.name + " is not valid", MessageType.Error, context: property.serializedObject.targetObject);
+                                XGUI.HelpBox_Layout(property.name + " is not valid", MessageType.Error, context: property.serializedObject.targetObject);
                             else
-                                NaughtyEditorGUI.HelpBox_Layout(validateInputAttribute.Message, MessageType.Error, context: property.serializedObject.targetObject);
+                                XGUI.HelpBox_Layout(validateInputAttribute.Message, MessageType.Error, context: property.serializedObject.targetObject);
                         }
                     }
                     else
                     {
                         var warning = "The field type is not the same as the callback's parameter type";
-                        NaughtyEditorGUI.HelpBox_Layout(warning, MessageType.Warning, context: property.serializedObject.targetObject);
+                        XGUI.HelpBox_Layout(warning, MessageType.Warning, context: property.serializedObject.targetObject);
                     }
                 }
                 else
                 {
                     string warning = validateInputAttribute.GetType().Name + " needs a callback with boolean return type and an optional single parameter of the same type as the field";
-                    NaughtyEditorGUI.HelpBox_Layout(warning, MessageType.Warning, context: property.serializedObject.targetObject);
+                    XGUI.HelpBox_Layout(warning, MessageType.Warning, context: property.serializedObject.targetObject);
                 }
             }
         }

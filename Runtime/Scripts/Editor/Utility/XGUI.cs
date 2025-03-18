@@ -11,7 +11,7 @@ namespace ASPax.Editor
     using Attributes.Drawer.SpecialCases;
     using Attributes.Validator;
 
-    public static class NaughtyEditorGUI
+    public static class XGUI
     {
         public const float IndentLength = 15.0f;
         public const float HorizontalSpacing = 2.0f;
@@ -287,7 +287,6 @@ namespace ASPax.Editor
         {
             switch (type)
             {
-                case MessageType.None:
                 case MessageType.Info:
                     Debug.Log(message, context);
                     break;
@@ -296,6 +295,9 @@ namespace ASPax.Editor
                     break;
                 case MessageType.Error:
                     Debug.LogError(message, context);
+                    break;
+                default:
+                    Debug.Log($"The enum {nameof(MessageType)} is {nameof(MessageType.None)}");
                     break;
             }
         }
