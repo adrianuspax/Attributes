@@ -1,7 +1,7 @@
 {
   "name": "com.adrianuspax.attributes",
   "displayName": "ASPax Attributes",
-  "version": "0.0.2",
+  "version": "1.0.4",
   "unity": "2018.4",
   "licence": "MIT",
   "repository": {
@@ -20,7 +20,7 @@
     {
       "displayName": "Demo Scene",
       "description": "Demo Scene",
-      "path": "Samples/DemoScene~"
+      "path": "Runtime/Samples~/DemoScene/"
     }
   ],
   "keywords": [ "attribute", "inspector", "editor", "unity" ]
