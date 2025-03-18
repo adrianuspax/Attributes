@@ -20,7 +20,7 @@
     {
       "displayName": "Demo Scene",
       "description": "Demo Scene",
-      "path": "Samples/DemoScene~"
+      "path": "Runtime/Samples~/DemoScene/"
     }
   ],
   "keywords": [ "attribute", "inspector", "editor", "unity" ]
