@@ -6,3 +6,4 @@ First commit
 # 1.0.4 - Fixed version into package.json
 # 2.0.0 - Renamed files and code
 # 2.0.1 - Inserted Header Constant Strings
+# 2.0.2 - Update packge.json
