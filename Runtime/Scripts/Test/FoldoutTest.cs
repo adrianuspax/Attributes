@@ -2,8 +2,7 @@
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Meta;
+    using Attributes;
 
     public class FoldoutTest : MonoBehaviour
     {

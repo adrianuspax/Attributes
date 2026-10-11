@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Drawer.SpecialCases
+namespace ASPax.Attributes
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class ShowNonSerializedFieldAttribute : SpecialCaseDrawerAttribute { }

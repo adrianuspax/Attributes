@@ -23,7 +23,7 @@ A maioria dos atributos são implementados usando `CustomPropertyDrawer` do Unit
 Os atributos que não funcionarão em seus editores personalizados são os metaatributos e alguns atributos drawers, como
 `ReorderableList`, `Button`, `ShowNonSerializedField` e `ShowNativeProperty`.
 
-No entanto, se quiser que todos os atributos funcionem em seus editores personalizados, você deve herdar de `NaughtyInspector` e usar a função `NaughtyEditorGUI.PropertyField_Layout` em vez de `EditorGUILayout.PropertyField`.
+No entanto, se quiser que todos os atributos funcionem em seus editores personalizados, você deve herdar de `ASPax.Attributes` e/ou usar a função `ASPax.Editor.XGUI.PropertyField_Layout` em vez de `EditorGUILayout.PropertyField`.
 
 ## Requirementos
 Unity **2019.4** ou versões superiores. Não se esqueça de incluir o namespace ASPax.Attributes.
@@ -39,7 +39,7 @@ Use o link https://github.com/adrianuspax/ASPax.Attributes
 Este atributo deve ser usado em alguns casos quando você deseja que metaatributos funcionem dentro de classes ou estruturas aninhadas serializáveis.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
     public MyStruct myStruct;
 }
@@ -63,7 +63,7 @@ Forneça opções especiais de desenho para campos serializados.
 Selecione um parâmetro do Animator na interface suspensa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	public Animator someAnimator;
 
@@ -82,7 +82,7 @@ Um método pode ser marcado como um botão. Um botão aparece no inspetor e exec
 Funciona tanto com métodos de instância quanto estáticos.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Button]
 	private void MethodOne() { }
@@ -98,7 +98,7 @@ public class NaughtyComponent : MonoBehaviour
 Defina limites e modifique a cor da curva para AnimationCurves
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[CurveRange(-1, -1, 1, 1)]
 	public AnimationCurve curve;
@@ -117,7 +117,7 @@ public class NaughtyComponent : MonoBehaviour
 Fornece uma interface para seleção de valores suspensos.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Dropdown("intValues")]
 	public int intValue;
@@ -162,7 +162,7 @@ public enum Direction
 	Down = 1 << 3
 }
 
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[EnumFlags]
 	public Direction flags;
@@ -175,7 +175,7 @@ public class NaughtyComponent : MonoBehaviour
 Torne objetos programáveis ​​expansíveis.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Expandable]
 	public ScriptableObject scriptableObject;
@@ -188,7 +188,7 @@ public class NaughtyComponent : MonoBehaviour
 Linhas horizontais para inspector.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[HorizontalLine(color: EColor.Red)]
 	public int red;
@@ -207,7 +207,7 @@ public class NaughtyComponent : MonoBehaviour
 Usado para fornecer informações adicionais.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[InfoBox("This is my int", EInfoBoxType.Normal)]
 	public int myInt;
@@ -226,7 +226,7 @@ public class NaughtyComponent : MonoBehaviour
 Selecione um eixo de entrada por meio da interface suspensa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[InputAxis]
 	public string inputAxis;
@@ -239,7 +239,7 @@ public class NaughtyComponent : MonoBehaviour
 Selecione uma camada na interface suspensa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Layer]
 	public string layerName;
@@ -255,7 +255,7 @@ public class NaughtyComponent : MonoBehaviour
 Um controle deslizante duplo. O **valor min** é salvo na propriedade **X**, e o **valor max** é salvo na propriedade **Y** de um campo **Vector2**.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[MinMaxSlider(0.0f, 100.0f)]
 	public Vector2 minMaxSlider;
@@ -267,7 +267,7 @@ public class NaughtyComponent : MonoBehaviour
 ### ProgressBar
 Barra de progresso.
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[ProgressBar("Health", 300, EColor.Red)]
 	public int health = 250;
@@ -286,7 +286,7 @@ public class NaughtyComponent : MonoBehaviour
 Fornece campos do tipo matriz com uma interface para fácil reordenação de elementos.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[ReorderableList]
 	public int[] intArray;
@@ -303,7 +303,7 @@ Uma área de texto redimensionável onde você pode ver o texto inteiro.
 Ao contrário dos atributos **Multiline** e **TextArea** do Unity, onde você pode ver apenas 3 linhas de um texto dado, e para vê-lo ou modificá-lo você tem que rolar manualmente para baixo até a linha desejada.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[ResizableTextArea]
 	public string resizableTextArea;
@@ -316,7 +316,7 @@ public class NaughtyComponent : MonoBehaviour
 Selecione uma cena nas configurações de construção por meio da interface suspensa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Scene]
 	public string bootScene; // scene name
@@ -332,7 +332,7 @@ public class NaughtyComponent : MonoBehaviour
 Mostra a pré-visualização da textura de um determinado ativo (Sprite, Prefab...).
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[ShowAssetPreview]
 	public Sprite sprite;
@@ -350,7 +350,7 @@ Todas as propriedades nativas são exibidas na parte inferior do inspetor após 
 Ele suporta apenas certos tipos **(bool, int, long, float, double, string, Vector2, Vector3, Vector4, Color, Bounds, Rect, UnityEngine.Object)**.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	public List<Transform> transforms;
 
@@ -369,7 +369,7 @@ Não há esse problema com campos não serializados estáticos porque seus valor
 Ele suporta apenas certos tipos **(bool, int, long, float, double, string, Vector2, Vector3, Vector4, Color, Bounds, Rect, UnityEngine.Object)**.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[ShowNonSerializedField]
 	private int myInt = 10;
@@ -388,7 +388,7 @@ public class NaughtyComponent : MonoBehaviour
 Selecione uma Sorting Layer por meio da interface suspensa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[SortingLayer]
 	public string layerName;
@@ -404,7 +404,7 @@ public class NaughtyComponent : MonoBehaviour
 Selecione uma tag na interface suspensa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Tag]
 	public string tagField;
@@ -420,7 +420,7 @@ Dê metadados aos campos. Um campo pode ter mais de um atributo meta.
 Envolve campos agrupados com uma caixa.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[BoxGroup("Integers")]
 	public int firstInt;
@@ -440,7 +440,7 @@ public class NaughtyComponent : MonoBehaviour
 Cria um grupo Fold.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Foldout("Integers")]
 	public int firstInt;
@@ -455,7 +455,7 @@ public class NaughtyComponent : MonoBehaviour
 Habilita/Desabilita condicionalmente.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	public bool enableMyInt;
 
@@ -479,7 +479,7 @@ public class NaughtyComponent : MonoBehaviour
 Você pode ter mais de uma condição.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	public bool flag0;
 	public bool flag1;
@@ -496,7 +496,7 @@ public class NaughtyComponent : MonoBehaviour
 Mostra/Esconde condicionalmente.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	public bool showInt;
 
@@ -520,7 +520,7 @@ public class NaughtyComponent : MonoBehaviour
 Você pode ter mais de uma condição.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	public bool flag0;
 	public bool flag1;
@@ -537,7 +537,7 @@ public class NaughtyComponent : MonoBehaviour
 Substituir rótulo de campo padrão.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Label("Short Name")]
 	public string veryVeryLongName;
@@ -555,7 +555,7 @@ Tenha em mente que o evento é detectado somente quando o valor é alterado do i
 Se você quiser um evento de tempo de execução, você provavelmente deve usar um event/delegate e assinar para ele.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[OnValueChanged("OnValueChangedCallback")]
 	public int myInt;
@@ -571,7 +571,7 @@ public class NaughtyComponent : MonoBehaviour
 Tornar um campo somente leitura.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[ReadOnly]
 	public Vector3 forwardVector = Vector3.forward;
@@ -587,7 +587,7 @@ Usado para validar os campos. Um campo pode ter um número infinito de atributos
 Fixa campos inteiros e flutuantes.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[MinValue(0), MaxValue(10)]
 	public int myInt;
@@ -603,7 +603,7 @@ public class NaughtyComponent : MonoBehaviour
 Usado para lembrar o desenvolvedor de que um determinado campo de tipo de referência é obrigatório.
 
 ```csharp
-public class NaughtyComponent : MonoBehaviour
+public class ASPaxComponent : MonoBehaviour
 {
 	[Required]
 	public Transform myTransform;
@@ -619,7 +619,7 @@ public class NaughtyComponent : MonoBehaviour
 O ValidatorAttribute mais poderoso.
 
 ```csharp
-public class _NaughtyComponent : MonoBehaviour
+public class _ASPaxComponent : MonoBehaviour
 {
 	[ValidateInput("IsNotNull")]
 	public Transform myTransform;

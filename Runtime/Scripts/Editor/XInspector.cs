@@ -7,10 +7,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Drawer.SpecialCases;
-    using ASPax.Attributes.Meta;
-    using ASPax.Attributes.Utility;
+    using ASPax.Attributes;
 
     [CanEditMultipleObjects]
     [CustomEditor(typeof(UnityEngine.Object), true)]

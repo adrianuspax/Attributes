@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Drawer.SpecialCases
+namespace ASPax.Attributes
 {
     public enum SButtonEnableMode
     {

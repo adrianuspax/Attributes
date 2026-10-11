@@ -1,10 +1,8 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ASPax.Attributes.Drawer
+namespace ASPax.Attributes
 {
-    using ASPax.Attributes.Utility;
-
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class CurveRangeAttribute : DrawerAttribute
     {

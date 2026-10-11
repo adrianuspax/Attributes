@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Drawer.SpecialCases;
+    using Attributes;
     using Attributes.Validator;
 
     public static class XGUI

@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Meta
+namespace ASPax.Attributes
 {
-    using Utility;
-
     public class ShowIfAttributeBase : MetaAttribute
     {
         private readonly string[] _conditions;

@@ -1,9 +1,9 @@
+using ASPax.Attributes;
 using System.Collections;
 using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer.SpecialCases;
 
     public class ButtonTest : MonoBehaviour
     {

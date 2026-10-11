@@ -2,11 +2,8 @@
     "name": "ASPax.Test",
     "rootNamespace": "ASPax.Test",
     "references": [
-        "ASPax.Attributes.Drawer",
-        "ASPax.Attributes.Drawer.SpecialCases",
-        "ASPax.Attributes.Validator",
-        "ASPax.Attributes.Utility",
-        "ASPax.Attributes.Meta"
+        "ASPax.Attributes",
+        "ASPax.Attributes.Validator"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

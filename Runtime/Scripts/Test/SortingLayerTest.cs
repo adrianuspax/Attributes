@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Drawer.SpecialCases;
+    using Attributes;
 
     public class SortingLayerTest : MonoBehaviour
     {

@@ -1,10 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Meta;
-    using System;
+    using Attributes;
 
     public class ReadOnlyTest : MonoBehaviour
     {

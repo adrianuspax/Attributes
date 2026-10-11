@@ -3,10 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Drawer.SpecialCases;
-    using ASPax.Attributes.Meta;
-    using ASPax.Attributes.Utility;
+    using Attributes;
 
     public class ShowIfTest : MonoBehaviour
     {
@@ -38,7 +35,7 @@ namespace ASPax.Test
         public ShowIfNest1 nest1;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class ShowIfNest1
     {
         public bool show1;

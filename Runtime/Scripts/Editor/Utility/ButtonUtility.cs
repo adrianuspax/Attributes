@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Meta;
+    using Attributes;
 
     public static class ButtonUtility
     {

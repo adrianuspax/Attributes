@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Drawer
+namespace ASPax.Attributes
 {
-    using Utility;
-
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class ProgressBarAttribute : DrawerAttribute
     {

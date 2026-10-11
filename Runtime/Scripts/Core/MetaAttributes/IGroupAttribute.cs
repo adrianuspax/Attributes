@@ -1,4 +1,4 @@
-﻿namespace ASPax.Attributes.Meta
+﻿namespace ASPax.Attributes
 {
     public interface IGroupAttribute { }
 }

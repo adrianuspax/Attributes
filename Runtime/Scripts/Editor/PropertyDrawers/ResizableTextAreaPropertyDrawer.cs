@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Drawer;
+    using Attributes;
 
     [CustomPropertyDrawer(typeof(ResizableTextAreaAttribute))]
     public class ResizableTextAreaPropertyDrawer : PropertyDrawerBase

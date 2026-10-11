@@ -7,7 +7,7 @@ namespace ASPax.Test
         // See #294
         public int precedingField = 5;
 
-        [Attributes.Drawer.Expandable]
+        [Attributes.Expandable]
         public ScriptableObject obj0;
 
         public ExpandableScriptableObjectNest1 nest1;
@@ -16,7 +16,7 @@ namespace ASPax.Test
     [System.Serializable]
     public class ExpandableScriptableObjectNest1
     {
-        [Attributes.Drawer.Expandable]
+        [Attributes.Expandable]
         public ScriptableObject obj1;
 
         public ExpandableScriptableObjectNest2 nest2;
@@ -25,7 +25,7 @@ namespace ASPax.Test
     [System.Serializable]
     public class ExpandableScriptableObjectNest2
     {
-        [Attributes.Drawer.Expandable]
+        [Attributes.Expandable]
         public ScriptableObject obj2;
     }
 }

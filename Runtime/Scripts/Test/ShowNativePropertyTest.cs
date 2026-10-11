@@ -2,7 +2,7 @@
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer.SpecialCases;
+    using Attributes;
 
     public class ShowNativePropertyTest : MonoBehaviour
     {

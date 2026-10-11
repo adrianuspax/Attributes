@@ -3,10 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Drawer.SpecialCases;
-    using ASPax.Attributes.Meta;
-    using ASPax.Attributes.Utility;
+    using Attributes;
 
     public class HideIfTest : MonoBehaviour
     {

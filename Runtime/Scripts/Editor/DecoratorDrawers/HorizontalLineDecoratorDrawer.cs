@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Drawer;
-    using Attributes.Utility;
+    using Attributes;
 
     [CustomPropertyDrawer(typeof(HorizontalLineAttribute))]
     public class HorizontalLineDecoratorDrawer : DecoratorDrawer

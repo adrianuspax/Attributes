@@ -2,7 +2,7 @@
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
+    using Attributes;
 
     //[CreateAssetMenu(fileName = "TestScriptableObjectB", menuName = "NaughtyAttributes/TestScriptableObjectB")]
     public class TestScriptableObjectB : ScriptableObject

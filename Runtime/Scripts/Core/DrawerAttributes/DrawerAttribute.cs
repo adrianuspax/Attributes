@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 
-namespace ASPax.Attributes.Drawer
+namespace ASPax.Attributes
 {
-    using ASPax.Attributes.Utility;
-
     /// <summary>
     /// Base class for all drawer attributes
     /// </summary>

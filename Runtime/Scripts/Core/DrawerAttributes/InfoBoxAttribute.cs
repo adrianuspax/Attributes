@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Drawer
+namespace ASPax.Attributes
 {
     public enum InfoBoxType
     {

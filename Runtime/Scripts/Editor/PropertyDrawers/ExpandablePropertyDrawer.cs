@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Drawer;
+    using Attributes;
 
     [CustomPropertyDrawer(typeof(ExpandableAttribute))]
     public class ExpandablePropertyDrawer : PropertyDrawerBase

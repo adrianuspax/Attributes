@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
+    using Attributes;
     using ASPax.Attributes.Validator;
 
     public class ValidateInputTest : MonoBehaviour

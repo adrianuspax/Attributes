@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Meta
+namespace ASPax.Attributes
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = true, Inherited = true)]
     public class OnValueChangedAttribute : MetaAttribute

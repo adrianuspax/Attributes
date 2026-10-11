@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Utility;
+    using Attributes;
 
     [CustomPropertyDrawer(typeof(ProgressBarAttribute))]
     public class ProgressBarPropertyDrawer : PropertyDrawerBase

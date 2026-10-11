@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ASPax.Attributes.Drawer
+namespace ASPax.Attributes
 {
     public interface IDropdownList : IEnumerable<KeyValuePair<string, object>> { }
 

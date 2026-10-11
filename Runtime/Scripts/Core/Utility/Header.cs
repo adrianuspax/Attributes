@@ -1,4 +1,4 @@
-namespace ASPax.Utilities
+namespace ASPax.Attributes
 {
     public static class Header
     {

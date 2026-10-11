@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Drawer.SpecialCases;
+    using Attributes;
     using Attributes.Validator;
 
     public abstract class SpecialCasePropertyDrawerBase

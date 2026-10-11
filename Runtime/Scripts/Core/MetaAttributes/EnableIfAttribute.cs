@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Meta
+namespace ASPax.Attributes
 {
-    using Utility;
-
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public class EnableIfAttribute : EnableIfAttributeBase
     {

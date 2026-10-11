@@ -4,7 +4,7 @@ namespace ASPax.Test
 {
     public class SceneTest : MonoBehaviour
     {
-        [Attributes.Drawer.Scene]
+        [Attributes.Scene]
         public string scene0;
 
         public SceneNest1 nest1;
@@ -13,7 +13,7 @@ namespace ASPax.Test
     [System.Serializable]
     public class SceneNest1
     {
-        [Attributes.Drawer.Scene]
+        [Attributes.Scene]
         public string scene1;
 
         public SceneNest2 nest2;
@@ -22,7 +22,7 @@ namespace ASPax.Test
     [System.Serializable]
     public struct SceneNest2
     {
-        [Attributes.Drawer.Scene]
+        [Attributes.Scene]
         public int scene2;
     }
 }

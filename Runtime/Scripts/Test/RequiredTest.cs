@@ -13,7 +13,7 @@ namespace ASPax.Test
     public class RequiredNest1
     {
         [Attributes.Validator.Required]
-        [Attributes.Drawer.AllowNesting] // Because it's nested we need to explicitly allow nesting
+        [Attributes.AllowNesting] // Because it's nested we need to explicitly allow nesting
         public Transform trans1;
         public RequiredNest2 nest2;
     }
@@ -22,7 +22,7 @@ namespace ASPax.Test
     public class RequiredNest2
     {
         [Attributes.Validator.Required("trans2 is invalid custom message - hohoho")]
-        [Attributes.Drawer.AllowNesting] // Because it's nested we need to explicitly allow nesting
+        [Attributes.AllowNesting] // Because it's nested we need to explicitly allow nesting
         public Transform trans2;
     }
 }

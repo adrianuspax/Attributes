@@ -2,33 +2,31 @@
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Meta;
     public class BoxGroupTest : MonoBehaviour
     {
-        [BoxGroup("Integers")]
+        [Attributes.BoxGroup("Integers")]
         public int int0;
-        [BoxGroup("Integers")]
+        [Attributes.BoxGroup("Integers")]
         public int int1;
 
-        [BoxGroup("Floats")]
+        [Attributes.BoxGroup("Floats")]
         public float float0;
-        [BoxGroup("Floats")]
+        [Attributes.BoxGroup("Floats")]
         public float float1;
 
-        [BoxGroup("Sliders")]
-        [MinMaxSlider(0, 1)]
+        [Attributes.BoxGroup("Sliders")]
+        [Attributes.MinMaxSlider(0, 1)]
         public Vector2 slider0;
-        [BoxGroup("Sliders")]
-        [MinMaxSlider(0, 1)]
+        [Attributes.BoxGroup("Sliders")]
+        [Attributes.MinMaxSlider(0, 1)]
         public Vector2 slider1;
 
         public string str0;
         public string str1;
 
-        [BoxGroup]
+        [Attributes.BoxGroup]
         public Transform trans0;
-        [BoxGroup]
+        [Attributes.BoxGroup]
         public Transform trans1;
     }
 }

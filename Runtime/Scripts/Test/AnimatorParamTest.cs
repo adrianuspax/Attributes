@@ -6,15 +6,15 @@ namespace ASPax.Test
     {
         public Animator animator0;
 
-        [Attributes.Drawer.AnimatorParam("animator0")]
+        [Attributes.AnimatorParam("animator0")]
         public int hash0;
 
-        [Attributes.Drawer.AnimatorParam("animator0")]
+        [Attributes.AnimatorParam("animator0")]
         public string name0;
 
         public AnimatorParamNest1 nest1;
 
-        [Attributes.Drawer.SpecialCases.Button("Log 'hash0' and 'name0'")]
+        [Attributes.Button("Log 'hash0' and 'name0'")]
         private void TestLog()
         {
             Debug.Log($"hash0 = {hash0}");
@@ -29,10 +29,10 @@ namespace ASPax.Test
         public Animator animator1;
         private Animator Animator1 => animator1;
 
-        [Attributes.Drawer.AnimatorParam("Animator1", AnimatorControllerParameterType.Bool)]
+        [Attributes.AnimatorParam("Animator1", AnimatorControllerParameterType.Bool)]
         public int hash1;
 
-        [Attributes.Drawer.AnimatorParam("Animator1", AnimatorControllerParameterType.Float)]
+        [Attributes.AnimatorParam("Animator1", AnimatorControllerParameterType.Float)]
         public string name1;
 
         public AnimatorParamNest2 nest2;
@@ -44,10 +44,10 @@ namespace ASPax.Test
         public Animator animator2;
         private Animator GetAnimator2() => animator2;
 
-        [Attributes.Drawer.AnimatorParam("GetAnimator2", AnimatorControllerParameterType.Int)]
+        [Attributes.AnimatorParam("GetAnimator2", AnimatorControllerParameterType.Int)]
         public int hash1;
 
-        [Attributes.Drawer.AnimatorParam("GetAnimator2", AnimatorControllerParameterType.Trigger)]
+        [Attributes.AnimatorParam("GetAnimator2", AnimatorControllerParameterType.Trigger)]
         public string name1;
     }
 }

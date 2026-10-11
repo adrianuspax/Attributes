@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ASPax.Attributes.Utility
+namespace ASPax.Attributes
 {
     public enum XColor
     {

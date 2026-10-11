@@ -3,11 +3,7 @@ using UnityEngine;
 
 namespace ASPax.Test
 {
-    using ASPax.Attributes.Utility;
-    using ASPax.Attributes.Validator;
-    using ASPax.Attributes.Drawer.SpecialCases;
-    using ASPax.Attributes.Drawer;
-    using ASPax.Attributes.Meta;
+    using Attributes;
 
     public class EnableIfTest : MonoBehaviour
     {

@@ -1,8 +1,6 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Meta
+namespace ASPax.Attributes
 {
-    using Utility;
-
     public class MetaAttribute : Attribute, IAtribute { }
 }

@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace ASPax.Attributes.Drawer
+namespace ASPax.Attributes
 {
-    using ASPax.Attributes.Utility;
-
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = true, Inherited = true)]
     public class HorizontalLineAttribute : DrawerAttribute
     {

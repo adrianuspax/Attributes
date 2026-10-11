@@ -1,4 +1,4 @@
-﻿namespace ASPax.Attributes.Utility
+﻿namespace ASPax.Attributes
 {
     public enum XConditionOperator
     {

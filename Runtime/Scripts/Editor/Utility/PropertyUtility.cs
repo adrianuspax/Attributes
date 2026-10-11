@@ -7,8 +7,7 @@ using UnityEngine;
 
 namespace ASPax.Editor
 {
-    using Attributes.Meta;
-    using Attributes.Utility;
+    using Attributes;
 
     public static class PropertyUtility
     {
